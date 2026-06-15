@@ -5,7 +5,7 @@ from core.parser import extract_clean_text
 from core.compliance_engine import LocalComplianceEngine
 from openai import OpenAI
 
-st.set_page_config(layout="wide", page_title="AMD Dual-Asset Comparison Shield")
+st.set_page_config(layout="wide", page_title="FinServe Compliance Validator")
 
 ACTIVE_MODEL = "Qwen/Qwen2.5-14B-Instruct"
 
@@ -20,8 +20,8 @@ COMPLIANCE_TARGETS = [
     {"id": "REG-C35", "name": "Dispute Mediation Window", "text": "Dispute resolution clauses must specify a mandatory 90-day mediation timeline before formal litigation."}
 ]
 
-st.title("🛡️ AMD Instinct™ Co-Pilot: Dual-Document Comparison Node")
-st.markdown("Side-by-side automated variance check and data alignment verification pipeline powered by **ROCm + local vLLM**.")
+st.title("🛡️ FinServe Compliance Validator")
+st.markdown("Automated variance check")
 st.write("---")
 
 # Dual File Uploaders inside Sidebar
